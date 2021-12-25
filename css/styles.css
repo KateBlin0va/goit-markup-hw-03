@@ -180,6 +180,10 @@ img {
   padding-bottom: 94px;
 }
 
+.features-list {
+  display: flex;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -210,11 +214,11 @@ img {
   color: var(--text-color);
 }
 
-/* ABOUT US */
-
-.about {
-  padding-bottom: 94px;
+.features--item:not(:last-child) {
+  margin-right: 30px;
 }
+
+/* ABOUT US */
 
 .about-title {
   font-weight: 700;
@@ -226,9 +230,17 @@ img {
   margin-bottom: 50px;
 }
 
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* TEAM */
 
-.team {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -262,6 +274,13 @@ img {
   color: var(--text-color);
 }
 
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* FOOTER */
 
 .footer {
@@ -336,6 +355,7 @@ img {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--title-color);
 }
 
@@ -344,6 +364,20 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.works-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
