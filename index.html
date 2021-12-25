@@ -9,11 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!--Шапка-->
     <header class="header">
+      <div class="container header-container">
       <nav class="header-nav">
         <a class="header-logo link"  href="/"><span class="logo-item-header">Web</span>Studio</a>
         <ul class="header-list list">
@@ -25,7 +29,8 @@
             <a class="header-link link"  href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="list">
+      <div class="header-connect" ></div>
+      <ul class="header-list list">
         <li>
           <a class="header-mail link"  href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -33,17 +38,21 @@
           <a class="header-tel link"  href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
+      </div>
     </header>
-    
+
     <main>
-    <!--Герой-->
+      <!--Герой-->
     <section class="hero">
+      <div class="hero-container">
       <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
       <button type="button" class="hero-btn pointer">Заказать услугу</button>
+      </div>
     </section>
 
       <!--Особенности-->
-      <section>
+      <section class="features">
+        <div class="container">
         <h2 class="features-title visually-hidden" >Особенности</h2>
         <ul class="features-list list">
           <li class="features-item">
@@ -67,10 +76,12 @@
             <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!--Чем мы занимаемся-->
       <section class="about">
+        <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
         <ul class="about-list list">
           <li class="about-item">
@@ -83,10 +94,12 @@
             <img src="./images/box3.jpg" alt="Планшет" width="370" />
           </li>
         </ul>
+        </div>
       </section>
 
       <!--Наша команда-->
-      <section class="team">
+      <section class="section">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-item">
@@ -110,10 +123,12 @@
             <p class="team-item-text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Футер-->
-    <footer>
+    <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="footer-logo link"><span class="logo-item-footer">Web</span>Studio </a>
       <address class="contacts link">
         <ul class="contacts-list list">
@@ -125,6 +140,7 @@
           <li><a class="contacts-item link"  href="tel:+380961111111">+38 096 111 11 11</a></li>
       </address>
         </ul>
+        </div>
     </footer>
   </body>
 </html>
