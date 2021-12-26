@@ -25,6 +25,14 @@ ul {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+/* .pointer {
+  cursor: pointer;
+} */
+
 img {
   display: block;
 }
@@ -35,10 +43,6 @@ img {
 
 .link {
   text-decoration: none;
-}
-
-.pointer {
-  cursor: pointer;
 }
 
 .container {
