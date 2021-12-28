@@ -57,7 +57,7 @@ img {
 
 .header {
   padding-bottom: 4px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -370,7 +370,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  padding: 6px, 22px;
+  padding: 6px 22px;
 }
 
 .portfolio-list {
